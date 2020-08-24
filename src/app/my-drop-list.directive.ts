@@ -1,8 +1,8 @@
 import { Directive, Input, Output, EventEmitter, InjectionToken } from '@angular/core';
 import {
   CdkDropList,
-  CDK_DROP_LIST,
   CdkDragDrop,
+  CDK_DROP_LIST,
 //  ɵangular_material_src_cdk_drag_drop_drag_drop_b
 } from '@angular/cdk/drag-drop';
 
@@ -12,6 +12,7 @@ import {
   providers: [
     {
       provide: CDK_DROP_LIST,
+      // provide: ɵangular_material_src_cdk_drag_drop_drag_drop_b,
       useExisting: MyDropListDirective
     },
   ],
