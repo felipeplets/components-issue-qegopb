@@ -1,0 +1,17 @@
+<div myDropList [myDropListData]="items" class="drag-drop-list" (myDropListDropped)="onItemDropped($event)">
+      <div myDrag
+           class="drag-drop-box"
+           *ngFor="let item of items"
+           myDragBoundary=".drag-drop-list"
+           [myDragData]="item"
+           [myDragDisabled]="item.disabled">
+        <span class="drag-drop-item-name">{{ item.name }}</span>
+      </div>
+    </div>
+
+<!--
+Copyright Google LLC All Rights Reserved.
+
+Use of this source code is governed by an MIT-style license that can be
+found in the LICENSE file at https://angular.io/license
+-->
